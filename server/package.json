@@ -1,25 +1,21 @@
 {
-  "name": "server",
+  "name": "app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-
-    "//": " just run npm install all dependencies and update if necessary",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "//": " just run install all dependencies and update if necessary",
     "install": "npm install && npm run update-dependencies",
-
     "//": "check if it is an new updates for eache dependencies",
     "check-updates": "npm outdated",
-
     "//": " updates for eache dependencies if necessary",
     "update-dependencies": "npm update"
+
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "dependencies": {
+"dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
@@ -33,3 +29,4 @@
     "react-native-dotenv": "^3.4.9"
   }
 }
+
